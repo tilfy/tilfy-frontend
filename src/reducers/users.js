@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
 const INITIAL_STATE = {
-  baseUrl: 'https://tilfy-api.herokuapp.com/api/v1',
+  baseUrl: process.env.REACT_APP_API_URL,
   auth: {
     'access-token': '',
     client: '',
